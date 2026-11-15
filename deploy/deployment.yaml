@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: housekeeping-roster
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: roster
+          image: registry.internal/roster:1.4.2
+          envFrom:
+            - secretRef:
+                name: roster-db
