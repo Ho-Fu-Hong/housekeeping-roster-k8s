@@ -1,2 +1,8 @@
-# housekeeping-roster-k8s
-Housekeeping roster deployment for venetianmacao.com hotel operations
+# Housekeeping Roster (Kubernetes)
+
+Deployment manifests for the housekeeping roster service of
+venetianmacao.com hotel operations.
+
+Apply with:
+
+    kubectl apply -f deploy/
